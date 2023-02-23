@@ -1,0 +1,16 @@
+{% extends 'layout.twig' %}
+
+{% block body %}
+  <header class="position-sticky mx-auto my-auto p-2 text-white bg-primary">
+    <h2>Kurs Dockera dla początkujących</h2>
+  </header>
+  <main class="container">
+    <div>
+      <p>Użytkownicy, którzy korzystali z aplikacji:</p> 
+      {% for key,user in users %}
+        <p>{{key + 1}} - {{ user }}</p>
+      {% endfor %}
+    </div>
+  </main>
+
+{% endblock %}
